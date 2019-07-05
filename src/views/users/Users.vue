@@ -35,10 +35,10 @@
 
 <script>
     import usersData from './UsersData'
-    import Paginate from '~/models/Paginate'
-    import User from '~/models/User'
+    import Paginate from '../../models/Paginate'
+    import User from '../../models/User'
     import axios from 'axios'
-    import VPaginate from '~/components/Paginate'
+    import VPaginate from '../../components/Paginate'
 
     export default {
         name: 'Users',
