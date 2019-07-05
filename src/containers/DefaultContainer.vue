@@ -42,7 +42,7 @@
 </template>
 
 <script>
-    import nav from '@/_nav'
+    import nav from '../_nav'
     import {
         Header as AppHeader,
         SidebarToggler,

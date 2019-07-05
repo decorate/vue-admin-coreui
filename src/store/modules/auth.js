@@ -1,8 +1,8 @@
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import {action, getter} from '../types'
-import User from '~/models/User'
-import Admin from '~/models/Admin'
+import User from '../../models/User'
+import Admin from '../../models/Admin'
 
 
 const TOKEN_NAME = 'admin_token'

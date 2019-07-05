@@ -129,8 +129,6 @@ function resolveComponents (components) {
 function getMiddleware (components) {
     const middleware = [...globalMiddleware]
 
-    components.map(x => console.log(x))
-
     components.filter(c => c.middleware).forEach(component => {
         if (Array.isArray(component.middleware)) {
             middleware.push(...component.middleware)

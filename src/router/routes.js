@@ -1,20 +1,20 @@
 
 // Containers
-const DefaultContainer = () => import('@/containers/DefaultContainer').then(m => m.default || m)
+const DefaultContainer = () => import('../containers/DefaultContainer').then(m => m.default || m)
 
 // Views
-const Dashboard = () => import('@/views/Dashboard').then(m => m.default || m)
+const Dashboard = () => import('../views/Dashboard').then(m => m.default || m)
 
 
 // Views - Pages
-const Page404 = () => import('@/views/pages/Page404').then(m => m.default || m)
-const Page500 = () => import('@/views/pages/Page500').then(m => m.default || m)
-const Login = () => import('@/views/pages/Login').then(m => m.default || m)
-const Register = () => import('@/views/pages/Register').then(m => m.default || m)
+const Page404 = () => import('../views/pages/Page404').then(m => m.default || m)
+const Page500 = () => import('../views/pages/Page500').then(m => m.default || m)
+const Login = () => import('../views/pages/Login').then(m => m.default || m)
+const Register = () => import('../views/pages/Register').then(m => m.default || m)
 
 // Users
-const Users = () => import('@/views/users/Users').then(m => m.default || m)
-const User = () => import('@/views/users/User').then(m => m.default || m)
+const Users = () => import('../views/users/Users').then(m => m.default || m)
+const User = () => import('../views/users/User').then(m => m.default || m)
 export default [
 
     {
@@ -85,6 +85,6 @@ export default [
 
     { path: '*', component: () => import(
             /* webpackChunkName: "errors_404" */
-            '@/views/pages/Page404'
+            '../views/pages/Page404'
             ).then(m => m.default || m) }
 ]
