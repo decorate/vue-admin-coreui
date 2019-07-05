@@ -1,0 +1,70 @@
+{
+  "name": "@team-decorate/vue-admin-coreui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/vue-admin.common.js",
+  "unpkg": "dist/vue-admin.umd.js",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build src/index.js --target lib --name vue-admin",
+    "test": "vue-cli-service test:unit tests/",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decorate/vue-admin-coreui.git"
+  },
+  "keywords": [
+    "admin",
+    "vue",
+    "coreui"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "axios": "*"
+  },
+  "devDependencies": {
+    "@coreui/coreui": "^2.1.12",
+    "@coreui/coreui-plugin-chartjs-custom-tooltips": "^1.3.1",
+    "@coreui/icons": "^0.3.0",
+    "@coreui/vue": "^2.1.2",
+    "@team-decorate/alcjs": "^1.1.1",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-plugin-unit-jest": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "@vue/test-utils": "^1.0.0-beta.24",
+    "axios": "^0.18.1",
+    "axios-mock-adapter": "^1.13.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-require-context-hook": "^1.0.0",
+    "bootstrap-vue": "^2.0.0-rc.25",
+    "chart.js": "^2.8.0",
+    "flag-icon-css": "^3.3.0",
+    "font-awesome": "^4.7.0",
+    "js-cookie": "^2.2.0",
+    "linq": "^3.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "simple-line-icons": "^2.4.1",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-meta": "^2.0.4",
+    "vue-router": "^3.0.7",
+    "vue-template-compiler": "^2.6.10",
+    "vuex": "^3.1.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
