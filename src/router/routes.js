@@ -18,8 +18,8 @@ const User = () => import('../views/users/User').then(m => m.default || m)
 export default [
 
     {
-        path: '/',
-        redirect: '/dashboard',
+        path: '/admin/',
+        redirect: '/admin/dashboard',
         name: 'home',
         component: DefaultContainer,
         children: [
@@ -52,7 +52,7 @@ export default [
         ],
     },
     {
-        path: '/pages',
+        path: '/admin/pages',
         redirect: '/pages/404',
         name: 'Pages',
         component: {
