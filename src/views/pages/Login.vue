@@ -67,8 +67,8 @@
 <script>
     import { mapActions, mapGetters } from 'vuex'
     import { action, getter } from '../../store/types'
-    import Admin from '~/models/Admin'
-    import OAuthResult from '~/models/Entities/OAuthResult'
+    import Admin from '../../models/Admin'
+    import OAuthResult from '../../models/Entities/OAuthResult'
 
     export default {
         name: 'Login',
