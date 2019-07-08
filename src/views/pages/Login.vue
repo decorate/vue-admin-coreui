@@ -118,7 +118,7 @@
 
                     await this[action.FETCH_ADMIN_USER]()
 
-                    this.$router.push({name: 'home'})
+                    this.$router.go('/')
 
                 } catch(e) {
                     this.error = true

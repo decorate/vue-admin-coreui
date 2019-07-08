@@ -29,20 +29,38 @@
       </b-dropdown-item>
       <b-dropdown-divider />
       <b-dropdown-item><i class="fa fa-shield" /> Lock Account</b-dropdown-item>
-      <b-dropdown-item><i class="fa fa-lock" /> Logout</b-dropdown-item>
+      <b-dropdown-item @click="logout"><i class="fa fa-lock" /> Logout</b-dropdown-item>
     </template>
   </AppHeaderDropdown>
 </template>
 
 <script>
-import { HeaderDropdown as AppHeaderDropdown } from '@coreui/vue'
-export default {
-  name: 'DefaultHeaderDropdownAccnt',
-  components: {
-    AppHeaderDropdown
-  },
-  data: () => {
-    return { itemsCount: 42 }
-  }
-}
+    import { HeaderDropdown as AppHeaderDropdown } from '@coreui/vue'
+    import { mapActions } from 'vuex'
+    import { action } from '../store/types'
+
+    export default {
+        name: 'DefaultHeaderDropdownAccnt',
+
+        data: () => {
+            return { itemsCount: 42 }
+        },
+
+        methods: {
+            ...mapActions([
+                action.ADMIN_LOGOUT
+            ]),
+
+            async logout() {
+                await this[action.ADMIN_LOGOUT]()
+
+                this.$router.push({name: 'login'})
+            }
+        },
+
+        components: {
+            AppHeaderDropdown
+        },
+    }
 </script>
+
